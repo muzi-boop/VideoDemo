@@ -1,18 +1,39 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="content">
+        <Index></Index>
+        <Sub></Sub>
+        <Swipper></Swipper>
+        <SubTo></SubTo>
+        <SwipperToing></SwipperToing>
+        <Reveal></Reveal>
+        <SwipperTo></SwipperTo>
+    </div>
+
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
+import Index  from "../components/index.vue"
+import Sub  from "../components/sub.vue"     
+import SubTo  from "../components/subTo.vue"                                                              
+import Swipper  from "../components/swipper.vue" 
+import SwipperTo  from "../components/swipperTo.vue" 
+import SwipperToing  from "../components/swipperToing.vue" 
+import Reveal  from "../components/reveal.vue"
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
+   components:{
+        Index,
+        Sub,
+        SubTo,
+        Swipper,
+        SwipperTo,
+        SwipperToing,
+        Reveal
+   }
 }
 </script>
+<style lang="less" scoped>
+.content{
+    margin:  0 auto;
+}
+</style>
